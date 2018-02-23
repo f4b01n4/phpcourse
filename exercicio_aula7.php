@@ -3,6 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors','1');
 
+
 function debug($var) {
 	echo "<pre>";
 	print_r($var);
@@ -10,7 +11,7 @@ function debug($var) {
 }
 
 /************************
- * Exercícios da Aula 7 *
+ * Exercício da Aula 7 *
  ************************/
 
 class Product {
@@ -124,9 +125,7 @@ class Basket {
 		$size		= count($this->products);
 		
 		if ($size > 0) {
-			for ($i = 0; $i < $size; $i++) {
-				$prod = $this->products[$i];
-				
+			foreach ($this->products as $i => $prod) {
 				if ($prod["product"]->getId() == $_product->getId()) {
 					$found = true;
 					
@@ -174,9 +173,7 @@ class Basket {
 			$size = count($this->products);
 		
 			if ($size > 0) {
-				for ($i = 0; $i < $size; $i++) {
-					$prod = $this->products[$i];
-					
+				foreach ($this->products as $i => $prod) {
 					if ($prod["product"]->getId() == $_product->getId()) {
 						$prod["quantity"] = $_quantity;
 						
