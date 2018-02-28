@@ -30,7 +30,7 @@ else
 	echo "Não<br/><br/>";
 
 
-/**************************** DATA ****************************/
+/**************************** DATE ****************************/
 
 /*
  * date($formato)
@@ -123,7 +123,7 @@ echo "O MD5 de \"fabio@pears.fr\" é: " . md5("fabio@pears.fr") . "<br/><br/>";
 
 /*
  * str_replace($search, $replace, $string)
- * Procura todas as ocurrências de $search em $string e substitui-as por $replace
+ * Procura todas as ocorrências de $search em $string e substitui-as por $replace
  */
  
 echo str_replace("André", "Fábio", "O meu nome é André") . "<br/><br/>";
@@ -137,7 +137,7 @@ echo "O comprimento da string \"Olá, o meu nome é Fábio\" é: " . strlen("Ol�
 
 /*
  * strtolower($string) e strtoupper($string)
- * Converte a $string para lower-case / uppper-case
+ * Converte a $string para lower-case / upper-case
  */
  
 echo "O strtoupper() de \"Hello World\" será: " . strtoupper("Hello World") . "<br/><br/>";
